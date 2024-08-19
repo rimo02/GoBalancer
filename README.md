@@ -14,14 +14,18 @@ The input is given through the configuration file `config.yaml`. You can change 
 ``` yaml
 //port in which server will be running
 lb_port: 3000
-algorithm: roundroubin // for now roundrobin works by default
 //available backend servers
 backends:
-  - "http://localhost:5100"
-  - "http://localhost:5200"
-  - "http://localhost:5300"
-  - "http://localhost:5400"
-  - "http://localhost:5500"
+  - url: "http://localhost:5100"
+    weight: 5
+  - url: "http://localhost:5200"
+    weight: 3
+  - url: "http://localhost:5300"
+    weight: 4
+  - url: "http://localhost:5400"
+    weight: 1
+  - url: "http://localhost:5500"
+    weight: 2
 
 ```
 
