@@ -12,7 +12,7 @@ A load balancer sits in front of a group of servers which is referred to as Serv
 
 The input is given through the configuration file `config.yaml`. You can change it as per your requirements
 ``` yaml
-//port in which server will be running
+//port in which load balancer will be running
 lb_port: 3000
 //available backend servers
 backends:
